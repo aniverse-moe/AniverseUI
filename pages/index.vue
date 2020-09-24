@@ -3,7 +3,7 @@
     <div>
       <Logo />
       <h1 class="title">
-        aniverse-ui
+        Aniverse UI
       </h1>
       <div class="links">
         <a
