@@ -1,0 +1,40 @@
+name: PreProd Deploy
+
+on:
+  push:
+    branches: [preprod]
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    env:
+      # For GH-Pages site that starts with the repo name (https://<user>.github.io/<reponame>)
+      NUXT_ROUTER_BASE: '/AniverseUI-PreProd-Host/'
+      
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Setup Node
+        uses: actions/setup-node@v2.1.0
+        with:
+          node-version: '12.x'
+
+      - name: Cache dependencies
+        uses: actions/cache@v2
+        with:
+          path: ~/.npm
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - run: npm ci
+      - run: npm test
+      - run: npm run generate
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          deploy_key: ${{ secrets.PREPROD_DEPLOY_KEY }}
+          external_repository: aniverse-moe/AniverseUI-PreProd-Host
+          publish_branch: master
+          publish_dir: ./dist
