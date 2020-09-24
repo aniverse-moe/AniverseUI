@@ -10,6 +10,8 @@ jobs:
     env:
       # For GH-Pages site that starts with the repo name (https://<user>.github.io/<reponame>)
       NUXT_ROUTER_BASE: '/AniverseUI-PreProd-Host/'
+      # Tell the build which commit triggered the workflow
+      LAST_COMMIT_SHA: ${{ github.sha }}
       
     steps:
       - uses: actions/checkout@v2

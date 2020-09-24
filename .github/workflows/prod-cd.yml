@@ -9,6 +9,9 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    env:
+      # Tell the build which commit triggered the workflow
+      LAST_COMMIT_SHA: ${{ github.sha }}
 
     steps:
       - uses: actions/checkout@v2
