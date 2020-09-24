@@ -48,6 +48,12 @@ export default {
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
 
+  router: {
+    // Add the name of the repo to the router.base
+    // See https://nuxtjs.org/faq/github-pages
+    base: process.env.NUXT_ROUTER_BASE || ''
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
   }
