@@ -58,3 +58,22 @@ $ npm run start
 `LAST_COMMIT_SHA: <sha>`.</br>
 Just compare the `<sha>` to the latest commit in the `prod`/`preprod` branch.
 
+## Development Tools
+### Recommended VSCode extensions
+> VS Code prompts a user to install the recommended extensions when the workspace is opened for the first time. The user can also review the list with the `Extensions: Show Recommended Extensions` command.
+
+*Required:*
+* [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+* [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+
+*Recommended:*
+* [vue-helper](https://marketplace.visualstudio.com/items?itemName=shenjiaolong.vue-helper)
+* [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
+* [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css#review-details)
+* [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
+* [Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
+* [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
+* [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
+* [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
+* [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
+* [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
