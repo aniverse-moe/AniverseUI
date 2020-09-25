@@ -17,7 +17,6 @@ Install dependencies:
 ```bash
 $ npm ci
 ```
-
 Or install and update dependencies (update package-lock):
 ```bash
 $ npm install
@@ -29,13 +28,22 @@ Serve with hot reload at localhost:3000
 $ npm run dev
 ```
 
+### Test and lint
+Run tests:
+```bash
+$ npm run test
+```
+Find lint problems:
+```bash
+$ npm run lint
+```
+
 ### Build and launch production
 Build and launch production static server (current):
 ```bash
 $ npm run generate
 $ npm run start
 ```
-
 Or build and launch production SSR server:
 ```bash
 $ npm run build
