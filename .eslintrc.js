@@ -14,5 +14,16 @@ module.exports = {
   plugins: [
   ],
   // add your custom rules here
-  rules: {}
+  rules: {
+    'quote-props': ['error', 'consistent'],
+
+    /*
+     * vue rules
+     */
+    'vue/html-self-closing': ['error', {
+      'html': {
+        'void': 'always'
+      }
+    }]
+  }
 }

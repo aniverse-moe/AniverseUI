@@ -1,10 +1,17 @@
 <template>
-  <div>
-    <Nuxt />
+  <div class="first-container">
+    <TopNavbar />
+    <div>
+      <Nuxt />
+    </div>
   </div>
 </template>
 
 <style>
+.first-container {
+  padding: 1rem;
+}
+
 html {
   font-family:
     'Source Sans Pro',
