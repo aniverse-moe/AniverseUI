@@ -9,6 +9,9 @@
         "files.trimTrailingWhitespace": false
     },
 
+    // Default tab size
+    "editor.tabSize": 2,
+
     // Enable ESLint as a formatter
     "eslint.format.enable": true
 }
