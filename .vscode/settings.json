@@ -1,3 +1,11 @@
 {
+    // Trim Trailing Whitespace
+    "files.trimTrailingWhitespace": true,
+    "[markdown]": {
+        // Don't trim trailing whitespace in markdown
+        "files.trimTrailingWhitespace": false
+    },
+
+    // Enable ESLint as a formatter
     "eslint.format.enable": true
 }
