@@ -24,6 +24,7 @@ export default {
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
+    '~/plugins/on-startup.client.js'
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -52,6 +53,10 @@ export default {
     // Add the name of the repo to the router.base
     // See https://nuxtjs.org/faq/github-pages
     base: process.env.NUXT_ROUTER_BASE || ''
+  },
+
+  publicRuntimeConfig: {
+    LAST_COMMIT_SHA: process.env.LAST_COMMIT_SHA
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)

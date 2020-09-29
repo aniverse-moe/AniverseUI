@@ -1,0 +1,25 @@
+{
+	// About workspace recommendations: https://go.microsoft.com/fwlink/?LinkId=827846
+
+	"recommendations": [
+		// Required:
+		"octref.vetur",
+		"dbaeumer.vscode-eslint",
+		// Recommended:
+		"shenjiaolong.vue-helper",
+		"bradlc.vscode-tailwindcss",
+		"ecmel.vscode-html-css",
+		"formulahendry.auto-rename-tag",
+		"bierner.markdown-preview-github-styles",
+		"eg2.vscode-npm-script",
+		"eamodio.gitlens",
+		"vscode-icons-team.vscode-icons",
+		"alefragnani.Bookmarks",
+		"Gruntfuggly.todo-tree",
+	],
+
+	// Extensions recommended by VS Code that should not be recommended
+	"unwantedRecommendations": [
+		
+	]
+}
