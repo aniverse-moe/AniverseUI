@@ -78,3 +78,22 @@ $ npm run start
 > **Tip:** To be sure the latest commit to `prod` or `preprod` has updated the site, open the site in the browser and open the DevTools. You will see a logged message: 
 `LAST_COMMIT_SHA: <sha>`.</br>
 Just compare the `<sha>` to the latest commit in the `prod`/`preprod` branch.
+
+## How To
+### How to add custom font?
+1. Add font file in `~/assets/fonts` folder.
+2. Add font-face in `~/assets/css/global-fonts.css`:
+
+    ```css
+    @font-face {
+      font-family: my-font-name;
+      src: url("~assets/fonts/my-font-file.ttf");
+    }
+    ```
+
+3. Use it:
+    ```css
+    .myClass {
+      font-family: my-font-name;
+    }
+    ```
