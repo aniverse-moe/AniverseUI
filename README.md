@@ -50,14 +50,6 @@ $ npm run build
 $ npm run start
 ```
 
-## Branches
-* `master`: The main branch. All development code is merged into `master` in sometime.
-* `prod`: Everything pushed to `prod` updates the real [production site](https://aniverse-moe.github.io). 
-* `preprod`: Everything pushed to `preprod` updates the real [pre-production site](https://aniverse-moe.github.io/AniverseUI-PreProd-Host). 
-> **Tip:** To be sure the latest commit to `prod` or `preprod` has updated the site, open the site in the browser and open the DevTools. You will see a logged message: 
-`LAST_COMMIT_SHA: <sha>`.</br>
-Just compare the `<sha>` to the latest commit in the `prod`/`preprod` branch.
-
 ## Development Tools
 ### Recommended VSCode extensions
 > VS Code prompts a user to install the recommended extensions when the workspace is opened for the first time. The user can also review the list with the `Extensions: Show Recommended Extensions` command.
@@ -77,3 +69,12 @@ Just compare the `<sha>` to the latest commit in the `prod`/`preprod` branch.
 * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 * [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
+
+## Contributing
+### Branches
+* `master`: The main branch. All development code is merged into `master` in sometime.
+* `prod`: Everything pushed to `prod` updates the real [production site](https://aniverse-moe.github.io). 
+* `preprod`: Everything pushed to `preprod` updates the real [pre-production site](https://aniverse-moe.github.io/AniverseUI-PreProd-Host). 
+> **Tip:** To be sure the latest commit to `prod` or `preprod` has updated the site, open the site in the browser and open the DevTools. You will see a logged message: 
+`LAST_COMMIT_SHA: <sha>`.</br>
+Just compare the `<sha>` to the latest commit in the `prod`/`preprod` branch.
