@@ -1,4 +1,7 @@
 {
+    // Insert a final new line at the end of the file when saving it
+    "files.insertFinalNewline": true,
+
     // Trim Trailing Whitespace
     "files.trimTrailingWhitespace": true,
     "[markdown]": {
