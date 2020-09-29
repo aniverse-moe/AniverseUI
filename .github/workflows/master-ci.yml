@@ -26,6 +26,8 @@ jobs:
             ${{ runner.os }}-node-
 
       - run: npm ci
+      - run: npm cache clear --force
+      - run: npm install sass
       - run: npm run lint
       - run: npm test
       - run: npm run generate
