@@ -8,8 +8,8 @@
       <div class="subheader">
         <ul>
           <li>
-            <nuxt-link :to="`/`">
-              עמוד-כלשהו
+            <nuxt-link :to="`/anime`">
+              אנימות
             </nuxt-link>
           </li>
         </ul>
@@ -22,7 +22,7 @@
 export default {}
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 nav {
   display: flex;
   justify-content: space-between;
@@ -42,7 +42,7 @@ nav {
 }
 .nav .logo .subheader {
   opacity: 0.7;
-  background-color: #4e7f8a;
+  background-color: #4e7f8a; // TODO: use color variable
   padding: 3px 10px 3px 10px;
   margin-top: 10px;
   min-height: 35px;
