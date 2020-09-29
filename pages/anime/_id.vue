@@ -88,7 +88,7 @@ aside {
   max-width: 234px;
   padding-left: 2rem;
   padding-right: 4px;
-  border-left: 1px solid #4e7f8a; // TODO: use color variable
+  border-left: 1px solid var(--main-color-1);
   margin-left: 28px;
 }
 
