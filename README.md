@@ -27,6 +27,7 @@ Serve with hot reload at localhost:3000
 ```bash
 $ npm run dev
 ```
+*See [Browser Debugging](#Browser-Debugging)*
 
 ### Test and lint
 Run tests:
@@ -57,6 +58,7 @@ $ npm run start
 *Required:*
 * [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
 *Recommended:*
 * [vue-helper](https://marketplace.visualstudio.com/items?itemName=shenjiaolong.vue-helper)
@@ -70,12 +72,35 @@ $ npm run start
 * [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 
+## Debugging
+### Browser Debugging:
+For simple debugging just run `npm run dev` to serve the site with hot reloading
+at localhost:3000, and open the site in any browser.<br/>
+* Best for live HTML editing. You can edit the code and watch the browser window change (That's what "hot reloading" means).
+* You can use the browser devtools, like CSS Editor, Breakpoints and Network Analysis.
+
+> *It's recommended to use [Vue.js devtools for chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) when in chrome.*
+
+### VSCode Debugging:
+To directly debug from VSCode with all its abilities:<br/>
+In VSCode, select `Launch Nuxt Server/Client` in the debugger drop-down menu, and start debugging
+by clicking on the green arrow or pressing `F5`.<br/>
+
+If your server is already running (by `npm run dev` somewhere), you can start faster only the
+client debugger by selecting `Launch client: chrome` in the drop-down menu.
+
+* VSCode is probably better for JavaScript debugging.
+* VSCode is a great way to debug the build process or the Server-Side Rendering.
+* Also has hot reloading.
+
+> *VSCode Debugging requires the [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) extension.*
+
 ## Contributing
 ### Branches
 * `master`: The main branch. All development code is merged into `master` in sometime.
-* `prod`: Everything pushed to `prod` updates the real [production site](https://aniverse-moe.github.io). 
-* `preprod`: Everything pushed to `preprod` updates the real [pre-production site](https://aniverse-moe.github.io/AniverseUI-PreProd-Host). 
-> **Tip:** To be sure the latest commit to `prod` or `preprod` has updated the site, open the site in the browser and open the DevTools. You will see a logged message: 
+* `prod`: Everything pushed to `prod` updates the real [production site](https://aniverse-moe.github.io).
+* `preprod`: Everything pushed to `preprod` updates the real [pre-production site](https://aniverse-moe.github.io/AniverseUI-PreProd-Host).
+> **Tip:** To be sure the latest commit to `prod` or `preprod` has updated the site, open the site in the browser and open the DevTools. You will see a logged message:
 `LAST_COMMIT_SHA: <sha>`.</br>
 Just compare the `<sha>` to the latest commit in the `prod`/`preprod` branch.
 
