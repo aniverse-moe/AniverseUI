@@ -52,7 +52,7 @@ $ npm run start
 ```
 
 ## Development Tools
-### Recommended VSCode extensions
+### VSCode extensions
 > VS Code prompts a user to install the recommended extensions when the workspace is opened for the first time. The user can also review the list with the `Extensions: Show Recommended Extensions` command.
 
 *Required:*
@@ -72,11 +72,14 @@ $ npm run start
 * [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 
+### Browser extensions
+* [Vue.js devtools for chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+
 ## Debugging
 ### Browser Debugging:
 For simple debugging just run `npm run dev` to serve the site with hot reloading
 at localhost:3000, and open the site in any browser.<br/>
-* Best for live HTML editing. You can edit the code and watch the browser window change (That's what "hot reloading" means).
+* Best for live HTML editing. Edit the code and watch the browser window change.
 * You can use the browser devtools, like CSS Editor, Breakpoints and Network Analysis.
 
 > *It's recommended to use [Vue.js devtools for chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) when in chrome.*
@@ -100,7 +103,8 @@ client debugger by selecting `Launch client: chrome` in the drop-down menu.
 * `master`: The main branch. All development code is merged into `master` in sometime.
 * `prod`: Everything pushed to `prod` updates the real [production site](https://aniverse-moe.github.io).
 * `preprod`: Everything pushed to `preprod` updates the real [pre-production site](https://aniverse-moe.github.io/AniverseUI-PreProd-Host).
-> **Tip:** To be sure the latest commit to `prod` or `preprod` has updated the site, open the site in the browser and open the DevTools. You will see a logged message:
+> **Tip:** To be sure the latest commit to `prod` or `preprod` has updated the site, open
+the site in the browser and open the DevTools Console. You will see a logged message:
 `LAST_COMMIT_SHA: <sha>`.</br>
 Just compare the `<sha>` to the latest commit in the `prod`/`preprod` branch.
 
