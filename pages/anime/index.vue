@@ -49,6 +49,7 @@ export default {
 }
 
 .title {
+  font-family: Bellefair-Regular, "Segoe UI";
   display: block;
   font-weight: 300;
   font-size: 100px;

@@ -33,7 +33,7 @@
 export default {}
 </script>
 
-<style lang="postcss">
+<style scoped lang="postcss">
 
 .container-under-navbar {
   margin-top: 35px;
