@@ -42,7 +42,7 @@ nav {
 }
 .nav .logo .subheader {
   opacity: 0.7;
-  background-color: #4e7f8a; // TODO: use color variable
+  background-color: var(--main-color-1);
   padding: 3px 10px 3px 10px;
   margin-top: 10px;
   min-height: 35px;

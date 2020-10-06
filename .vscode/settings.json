@@ -6,11 +6,15 @@
     "files.trimTrailingWhitespace": true,
     "[markdown]": {
         // Don't trim trailing whitespace in markdown
-        "files.trimTrailingWhitespace": false
+        "files.trimTrailingWhitespace": true
     },
 
     // Default tab size
     "editor.tabSize": 2,
+
+    // To use "Debugger for Chrome" extension
+    // See https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome
+    "debug.javascript.usePreview": false,
 
     // Enable ESLint as a formatter
     "eslint.format.enable": true

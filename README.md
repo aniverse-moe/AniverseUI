@@ -1,4 +1,9 @@
 # Aniverse UI
+
+![Master CI](https://github.com/aniverse-moe/AniverseUI/workflows/Master%20CI/badge.svg)
+![Prod Deploy](https://github.com/aniverse-moe/AniverseUI/workflows/Prod%20Deploy/badge.svg)
+![PreProd Deploy](https://github.com/aniverse-moe/AniverseUI/workflows/PreProd%20Deploy/badge.svg)
+
 Aniverse official site
 > Aniverse is an open source database for hebrew anime translations.
 
@@ -27,6 +32,7 @@ Serve with hot reload at localhost:3000
 ```bash
 $ npm run dev
 ```
+*See [Browser Debugging](#Browser-Debugging)*
 
 ### Test and lint
 Run tests:
@@ -50,21 +56,14 @@ $ npm run build
 $ npm run start
 ```
 
-## Branches
-* `master`: The main branch. All development code is merged into `master` in sometime.
-* `prod`: Everything pushed to `prod` updates the real [production site](https://aniverse-moe.github.io). 
-* `preprod`: Everything pushed to `preprod` updates the real [pre-production site](https://aniverse-moe.github.io/AniverseUI-PreProd-Host). 
-> **Tip:** To be sure the latest commit to `prod` or `preprod` has updated the site, open the site in the browser and open the DevTools. You will see a logged message: 
-`LAST_COMMIT_SHA: <sha>`.</br>
-Just compare the `<sha>` to the latest commit in the `prod`/`preprod` branch.
-
 ## Development Tools
-### Recommended VSCode extensions
+### VSCode extensions
 > VS Code prompts a user to install the recommended extensions when the workspace is opened for the first time. The user can also review the list with the `Extensions: Show Recommended Extensions` command.
 
 *Required:*
 * [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
 *Recommended:*
 * [vue-helper](https://marketplace.visualstudio.com/items?itemName=shenjiaolong.vue-helper)
@@ -77,3 +76,58 @@ Just compare the `<sha>` to the latest commit in the `prod`/`preprod` branch.
 * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
 * [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
+
+### Browser extensions
+* [Vue.js devtools for chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd)
+
+## Debugging
+### Browser Debugging:
+For simple debugging just run `npm run dev` to serve the site with hot reloading
+at localhost:3000, and open the site in any browser.<br/>
+* Best for live HTML editing. Edit the code and watch the browser window change.
+* You can use the browser devtools, like CSS Editor, Breakpoints and Network Analysis.
+
+> *It's recommended to use [Vue.js devtools for chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) when in chrome.*
+
+### VSCode Debugging:
+To directly debug from VSCode with all its abilities:<br/>
+In VSCode, select `Launch Nuxt Server/Client` in the debugger drop-down menu, and start debugging
+by clicking on the green arrow or pressing `F5`.<br/>
+
+If your server is already running (by `npm run dev` somewhere), you can start faster only the
+client debugger by selecting `Launch client: chrome` in the drop-down menu.
+
+* VSCode is probably better for JavaScript debugging.
+* VSCode is a great way to debug the build process or the Server-Side Rendering.
+* Also has hot reloading.
+
+> *VSCode Debugging requires the [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) extension.*
+
+## Contributing
+### Branches
+* `master`: The main branch. All development code is merged into `master` in sometime.
+* `prod`: Everything pushed to `prod` updates the real [production site](https://aniverse-moe.github.io).
+* `preprod`: Everything pushed to `preprod` updates the real [pre-production site](https://aniverse-moe.github.io/AniverseUI-PreProd-Host).
+> **Tip:** To be sure the latest commit to `prod` or `preprod` has updated the site, open
+the site in the browser and open the DevTools Console. You will see a logged message:
+`LAST_COMMIT_SHA: <sha>`.</br>
+Just compare the `<sha>` to the latest commit in the `prod`/`preprod` branch.
+
+## How To
+### How to add custom font?
+1. Add font file in `~/assets/fonts` folder.
+2. Add font-face in `~/assets/css/global-fonts.css`:
+
+    ```css
+    @font-face {
+      font-family: my-font-name;
+      src: url("~assets/fonts/my-font-file.ttf");
+    }
+    ```
+
+3. Use it:
+    ```css
+    .myClass {
+      font-family: my-font-name;
+    }
+    ```
