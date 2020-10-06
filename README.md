@@ -1,4 +1,9 @@
 # Aniverse UI
+
+![Master CI](https://github.com/aniverse-moe/AniverseUI/workflows/Master%20CI/badge.svg)
+![Prod Deploy](https://github.com/aniverse-moe/AniverseUI/workflows/Prod%20Deploy/badge.svg)
+![PreProd Deploy](https://github.com/aniverse-moe/AniverseUI/workflows/PreProd%20Deploy/badge.svg)
+
 Aniverse official site
 > Aniverse is an open source database for hebrew anime translations.
 
