@@ -66,6 +66,14 @@ export default {
     LAST_COMMIT_SHA: process.env.LAST_COMMIT_SHA
   },
 
+  generate: {
+    // Set fallback to true when using static host, for direct access to dynamic routes,
+    // and for custom '404.html' instead of the default '200.html'.
+    // See https://nuxtjs.org/guide/routing/#spa-fallback
+    // See https://stackoverflow.com/questions/50973576/nuxtjs-spa-dynamic-routes-generate-404-after-prod-deployment
+    fallback: true,
+  },
+
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
   }
