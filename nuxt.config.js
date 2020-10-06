@@ -7,7 +7,12 @@ export default {
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'aniverse-ui',
+    titleTemplate: (titleChunk) => {
+      return titleChunk ? `Aniverse | ${titleChunk}` : 'Aniverse'
+    },
+    htmlAttrs: {
+      lang: 'he'
+    },
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
@@ -59,6 +64,14 @@ export default {
 
   publicRuntimeConfig: {
     LAST_COMMIT_SHA: process.env.LAST_COMMIT_SHA
+  },
+
+  generate: {
+    // Set fallback to true when using static host, for direct access to dynamic routes,
+    // and for custom '404.html' instead of the default '200.html'.
+    // See https://nuxtjs.org/guide/routing/#spa-fallback
+    // See https://stackoverflow.com/questions/50973576/nuxtjs-spa-dynamic-routes-generate-404-after-prod-deployment
+    fallback: true,
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
