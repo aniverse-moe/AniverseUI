@@ -66,7 +66,7 @@ $ npm run start
 * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
 *Recommended:*
-* [vue-helper](https://marketplace.visualstudio.com/items?itemName=shenjiaolong.vue-helper)
+* [Vue Peek](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vue-peek)
 * [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 * [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css#review-details)
 * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)

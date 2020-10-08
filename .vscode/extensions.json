@@ -7,7 +7,7 @@
 		"dbaeumer.vscode-eslint",
 		"msjsdiag.debugger-for-chrome",
 		// Recommended:
-		"shenjiaolong.vue-helper",
+		"dariofuzinato.vue-peek",
 		"bradlc.vscode-tailwindcss",
 		"ecmel.vscode-html-css",
 		"formulahendry.auto-rename-tag",
