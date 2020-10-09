@@ -17,5 +17,9 @@
     "debug.javascript.usePreview": false,
 
     // Enable ESLint as a formatter
-    "eslint.format.enable": true
+    "eslint.format.enable": true,
+
+    // Disable vscode's default CSS linting
+    "css.validate": false,
+    "scss.validate": false
 }

@@ -6,7 +6,7 @@
           אנימות
         </h1>
         <ul>
-          <li v-for="anime in animeList" :key="anime.id" dir="rtl">
+          <li v-for="anime in animeList" :key="anime.id">
             <nuxt-link :to="`/anime/${anime.id}`">
               {{ anime.hebTitle }} ({{ anime.engTitle }})
             </nuxt-link>
