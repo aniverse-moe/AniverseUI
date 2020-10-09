@@ -1,6 +1,6 @@
 <template>
   <div class="container-under-navbar">
-    <div class="page-container">
+    <div class="page-order">
       <article>
         <h1 class="heb-title">
           {{ currAnime.hebTitle }}
@@ -11,8 +11,8 @@
         <p>{{ currAnime.description }}</p>
       </article>
 
-      <aside>
-        <h4 dir="rtl">
+      <div class="inner-menu">
+        <h4 class="-lg:text-xl">
           אנימות שאולי תאהבו:
         </h4>
         <ul>
@@ -22,7 +22,7 @@
             </nuxt-link>
           </li>
         </ul>
-      </aside>
+      </div>
     </div>
   </div>
 </template>
@@ -71,27 +71,21 @@ export default {
   margin-top: 35px;
 }
 
-.page-container {
-  display: flex;
-  justify-content: space-between;
-  line-height: 1.5;
-  text-align: right;
+.page-order {
+  @apply flex flex-col;
 }
 
 article * {
   margin-bottom: 1rem;
-  direction: rtl;
 }
 
-aside {
-  min-width: 234px;
-  max-width: 234px;
-  padding-left: 2rem;
-  padding-right: 4px;
-  border-left: 1px solid var(--main-color-1);
-  margin-left: 28px;
+.inner-menu {
+  margin-top: 28px;
+  padding-top: 28px;
+  border-top: 1px solid var(--main-color-1);
 }
 
+// eslint-disable-next-line vue-scoped-css/no-unused-selector
 %title {
   font-size: 2rem;
 }
@@ -106,6 +100,26 @@ aside {
   direction: ltr;
 }
 
+@screen lg {
+  .page-order {
+    @apply flex-row-reverse;
+  }
+
+  .inner-menu {
+    margin-top: unset;
+    border-top: unset;
+    padding-top: unset;
+
+    min-width: 234px;
+    max-width: 234px;
+    padding-left: 2rem;
+    padding-right: 4px;
+    border-left: 1px solid var(--main-color-1);
+    margin-left: 28px;
+  }
+}
+
+// eslint-disable-next-line vue-scoped-css/no-unused-selector
 a {
   color: #4fb99f;
   text-decoration: none;
@@ -114,9 +128,5 @@ a {
   &:hover {
     color: #068587;
   }
-}
-
-h3 {
-  font-weight: bold;
 }
 </style>

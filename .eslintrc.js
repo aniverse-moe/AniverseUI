@@ -26,14 +26,18 @@ module.exports = {
     'no-unused-vars': 'warn',
     'object-shorthand': 'off',
     'quote-props': ['error', 'consistent'],
+    'quotes': 'off',
 
     /*
      * vue rules
      */
     'vue/html-self-closing': ['error', {
       'html': {
-        'void': 'always'
+        'void': 'always',
+        'normal': 'any',
+        'component': 'always'
       }
-    }]
+    }],
+    'vue/singleline-html-element-content-newline': 'off'
   }
 }

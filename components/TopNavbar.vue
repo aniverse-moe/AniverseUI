@@ -31,15 +31,18 @@ nav {
   letter-spacing: 0.5px;
   direction: rtl;
 }
+
 .nav .logo {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 100%;
 }
+
 .upper-nav {
   padding-right: 3px;
 }
+
 .nav .logo .subheader {
   opacity: 0.7;
   background-color: var(--main-color-1);
@@ -54,6 +57,7 @@ nav {
   display: flex;
   align-items: center;
 }
+
 .subheader li {
   display: inline;
   padding-left: 11px;
