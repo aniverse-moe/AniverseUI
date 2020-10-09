@@ -27,6 +27,7 @@ export default {
   css: [
     '@/assets/css/global-colors.css',
     '@/assets/css/global-fonts.css',
+    '@/assets/css/global-site.scss',
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
@@ -57,11 +58,13 @@ export default {
   axios: {},
 
   router: {
-    // Add the name of the repo to the router.base
+    // If available, add the name of the repo to the router.base
     // See https://nuxtjs.org/faq/github-pages
     base: process.env.NUXT_ROUTER_BASE || ''
   },
 
+  // Value of this object is accessible from both client and server using $config
+  // See https://nuxtjs.org/guide/runtime-config
   publicRuntimeConfig: {
     LAST_COMMIT_SHA: process.env.LAST_COMMIT_SHA
   },

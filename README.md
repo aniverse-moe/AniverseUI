@@ -66,7 +66,7 @@ $ npm run start
 * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
 *Recommended:*
-* [vue-helper](https://marketplace.visualstudio.com/items?itemName=shenjiaolong.vue-helper)
+* [Vue Peek](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vue-peek)
 * [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 * [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css#review-details)
 * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
@@ -90,7 +90,7 @@ at localhost:3000, and open the site in any browser.<br/>
 > *It's recommended to use [Vue.js devtools for chrome](https://chrome.google.com/webstore/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) when in chrome.*
 
 ### VSCode Debugging:
-To directly debug from VSCode with all its abilities:<br/>
+To directly debug from VSCode with all its capabilities:<br/>
 In VSCode, select `Launch Nuxt Server/Client` in the debugger drop-down menu, and start debugging
 by clicking on the green arrow or pressing `F5`.<br/>
 
@@ -104,6 +104,7 @@ client debugger by selecting `Launch client: chrome` in the drop-down menu.
 > *VSCode Debugging requires the [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome) extension.*
 
 ## Contributing
+TODO...
 ### Branches
 * `master`: The main branch. All development code is merged into `master` in sometime.
 * `prod`: Everything pushed to `prod` updates the real [production site](https://aniverse-moe.github.io).
@@ -113,21 +114,5 @@ the site in the browser and open the DevTools Console. You will see a logged mes
 `LAST_COMMIT_SHA: <sha>`.</br>
 Just compare the `<sha>` to the latest commit in the `prod`/`preprod` branch.
 
-## How To
-### How to add custom font?
-1. Add font file in `~/assets/fonts` folder.
-2. Add font-face in `~/assets/css/global-fonts.css`:
-
-    ```css
-    @font-face {
-      font-family: my-font-name;
-      src: url("~assets/fonts/my-font-file.ttf");
-    }
-    ```
-
-3. Use it:
-    ```css
-    .myClass {
-      font-family: my-font-name;
-    }
-    ```
+## FAQ
+* [**How to add custom font?**](docs/FAQ/custom-font.md)
