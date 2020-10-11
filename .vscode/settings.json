@@ -19,7 +19,21 @@
     // Enable ESLint as a formatter
     "eslint.format.enable": true,
 
-    // Disable vscode's default CSS linting
+    // Disable vscode's default CSS linting (instead we use Stylelint)
     "css.validate": false,
-    "scss.validate": false
+    "scss.validate": false,
+
+    // Disable all vetur formatters except the css formatters
+    // (Vetur css formatter is sometimes better than Stylelint,
+    //  we can use it by: 'Format Document with...' > 'vetur')
+    "vetur.format.defaultFormatter.html": "none",
+    "vetur.format.defaultFormatter.js": "none",
+    "vetur.format.defaultFormatter.ts": "none",
+
+    // Auto fix on save
+    // (Equivalent to running the command 'Fix all auto-fixable problems')
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": true,
+        "source.fixAll.stylelint": true
+    }
 }

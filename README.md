@@ -63,18 +63,18 @@ $ npm run start
 *Required:*
 * [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
 * [ESLint](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
+* [stylelint](https://marketplace.visualstudio.com/items?itemName=stylelint.vscode-stylelint)
 * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
 *Recommended:*
 * [Vue Peek](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vue-peek)
 * [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-* [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css#review-details)
+* [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
 * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 * [Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
 * [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
 * [GitLens](https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens)
 * [vscode-icons](https://marketplace.visualstudio.com/items?itemName=vscode-icons-team.vscode-icons)
-* [Bookmarks](https://marketplace.visualstudio.com/items?itemName=alefragnani.Bookmarks)
 * [Todo Tree](https://marketplace.visualstudio.com/items?itemName=Gruntfuggly.todo-tree)
 
 ### Browser extensions
