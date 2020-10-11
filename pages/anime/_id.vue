@@ -122,7 +122,7 @@ article * {
 // eslint-disable-next-line vue-scoped-css/no-unused-selector
 a {
   color: #4fb99f;
-  text-decoration: none;
+  text-decoration: none ;
   transition: all 0.3s ease;
 
   &:hover {
