@@ -1,19 +1,24 @@
 module.exports = {
   root: true,
+
   env: {
     browser: true,
     node: true
   },
+
   parserOptions: {
     parser: 'babel-eslint'
   },
+
   extends: [
     '@nuxtjs',
     'plugin:nuxt/recommended',
     'plugin:vue-scoped-css/vue3-recommended',
   ],
+
   plugins: [
   ],
+
   // add your custom rules here
   rules: {
     /*
@@ -39,5 +44,12 @@ module.exports = {
       }
     }],
     'vue/singleline-html-element-content-newline': 'off'
-  }
+  },
+
+  globals: {
+    // With global `_` we don't get no-undef error when using lodash.
+    // 'false' means the variable can't be overwritten, so the code:
+    //   _ = 'something else' would yield an error.
+    '_': false
+  },
 }
