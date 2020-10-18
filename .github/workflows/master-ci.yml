@@ -4,7 +4,7 @@ name: Master CI
 
 on:
   pull_request:
-    branches: [master, prod] # or main
+    branches: [master, main, prod]
 
 jobs:
   test_and_build:
