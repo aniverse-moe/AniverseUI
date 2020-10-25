@@ -45,7 +45,9 @@ export default {
     // https://go.nuxtjs.dev/eslint
     '@nuxtjs/eslint-module',
     // https://go.nuxtjs.dev/tailwindcss
-    '@nuxtjs/tailwindcss'
+    '@nuxtjs/tailwindcss',
+    // https://github.com/nuxt-community/fontawesome-module
+    '@nuxtjs/fontawesome',
   ],
 
   // Modules (https://go.nuxtjs.dev/config-modules)
@@ -58,6 +60,16 @@ export default {
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
+
+  // fontawesome module configuration (https://github.com/nuxt-community/fontawesome-module)
+  fontawesome: {
+    icons: {
+      // https://fontawesome.com/icons?s=solid (Free)
+      solid: [],
+      // https://fontawesome.com/icons?s=brands (Free)
+      brands: [],
+    }
+  },
 
   router: {
     // If available, add the name of the repo to the router.base
