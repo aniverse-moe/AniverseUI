@@ -1,4 +1,5 @@
 import webpack from 'webpack'
+import { ApiModes } from './plugins/apimode'
 
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
@@ -30,11 +31,13 @@ export default {
     '@/assets/css/global-colors.css',
     '@/assets/css/global-fonts.css',
     '@/assets/css/global-site.scss',
+    '@/assets/css/global-icons.scss',
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    '~/plugins/on-startup.client.js'
+    '~/plugins/on-startup.client.js',
+    '~/plugins/apimode.js',
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -65,7 +68,7 @@ export default {
   fontawesome: {
     icons: {
       // https://fontawesome.com/icons?s=solid (Free)
-      solid: [],
+      solid: ['faWifi'],
       // https://fontawesome.com/icons?s=brands (Free)
       brands: [],
     }
@@ -80,7 +83,10 @@ export default {
   // Value of this object is accessible from both client and server using $config
   // See https://nuxtjs.org/guide/runtime-config
   publicRuntimeConfig: {
-    LAST_COMMIT_SHA: process.env.LAST_COMMIT_SHA
+    LAST_COMMIT_SHA: process.env.LAST_COMMIT_SHA,
+    API_START_MODE: process.env.NODE_ENV === 'production'
+      ? ApiModes.REMOTE
+      : ApiModes.LOCAL
   },
 
   generate: {
