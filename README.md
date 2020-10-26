@@ -116,3 +116,4 @@ Just compare the `<sha>` to the latest commit in the `prod`/`preprod` branch.
 
 ## FAQ
 * [**How to add custom font?**](docs/FAQ/custom-font.md)
+* [**How to add icons?**](docs/FAQ/icons.md)
