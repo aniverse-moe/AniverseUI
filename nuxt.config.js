@@ -56,13 +56,19 @@ export default {
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
     // https://go.nuxtjs.dev/axios
-    '@nuxtjs/axios',
+    '@nuxtjs/axios', // TODO: maybe delete axios. (we have strapi)
     // https://go.nuxtjs.dev/pwa
-    '@nuxtjs/pwa'
+    '@nuxtjs/pwa',
+    // https://strapi.nuxtjs.org
+    '@nuxtjs/strapi',
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
   axios: {},
+
+  strapi: {
+    url: process.env.ANIVERSE_API_URL || 'http://localhost:1337'
+  },
 
   // fontawesome module configuration (https://github.com/nuxt-community/fontawesome-module)
   fontawesome: {
