@@ -21,7 +21,9 @@ Don't forget to add the new icon to `nuxt.config.js`:
 
 See [Font Awesome Docs](https://fontawesome.com/how-to-use/on-the-web/referencing-icons/basic-use).
 
-> **WARNING:** Use only free icons.
+> **Note:** You may need to restart Nuxt to see new icons.
+
+> **Warning:** Use only free icons.
 
 ## Custom SVG Icon
 
