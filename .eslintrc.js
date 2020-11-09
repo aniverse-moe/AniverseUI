@@ -19,7 +19,6 @@ module.exports = {
   plugins: [
   ],
 
-  // add your custom rules here
   rules: {
     /*
      * eslint rules
@@ -28,7 +27,7 @@ module.exports = {
     'brace-style': ['error', 'stroustrup', { 'allowSingleLine': true }],
     'comma-dangle': ['error', 'only-multiline'],
     'no-lonely-if': 'off',
-    'no-unused-vars': 'warn',
+    'no-unused-vars': 'off', // disabled because JSDoc types are not recognized
     'object-shorthand': 'off',
     'quote-props': ['error', 'consistent'],
     'quotes': 'off',
