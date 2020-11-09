@@ -69,7 +69,7 @@ $ npm run start
 *Recommended:*
 * [Vue Peek](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vue-peek)
 * [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-* [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+* [TabNine](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
 * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 * [Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
 * [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
