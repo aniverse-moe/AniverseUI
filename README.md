@@ -67,6 +67,7 @@ $ npm run start
 * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
 *Recommended:*
+* [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
 * [Vue Peek](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vue-peek)
 * [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
 * [TabNine](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)

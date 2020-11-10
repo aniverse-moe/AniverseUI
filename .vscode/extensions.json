@@ -8,6 +8,7 @@
 		"stylelint.vscode-stylelint",
 		"msjsdiag.debugger-for-chrome",
 		// Recommended:
+		"Orta.vscode-jest",
 		"dariofuzinato.vue-peek",
 		"bradlc.vscode-tailwindcss",
 		"TabNine.tabnine-vscode",
