@@ -1,5 +1,5 @@
 import webpack from 'webpack'
-import { ApiModes } from './plugins/apimode'
+import { ApiModesEnum } from './lib/api/mode/ApiModesEnum'
 
 export default {
   // Disable server-side rendering (https://go.nuxtjs.dev/ssr-mode)
@@ -37,7 +37,7 @@ export default {
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
     '~/plugins/on-startup.client.js',
-    '~/plugins/apimode.js',
+    '~/plugins/api.js',
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
@@ -91,8 +91,8 @@ export default {
   publicRuntimeConfig: {
     LAST_COMMIT_SHA: process.env.LAST_COMMIT_SHA,
     API_START_MODE: process.env.NODE_ENV === 'production'
-      ? ApiModes.REMOTE
-      : ApiModes.LOCAL
+      ? ApiModesEnum.REMOTE
+      : ApiModesEnum.LOCAL
   },
 
   generate: {

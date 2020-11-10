@@ -8,14 +8,14 @@
 
         <!-- API Mode area -->
         <div class="select-none text-left px-1" dir="ltr">
-          <div v-if="$apimode.isLocal">
+          <div v-if="$api.mode.isLocal">
             <span class="text-red-800">
               <icon-offline />
               <span class="font-bold">Offline API</span>
             </span>
             <button
               class="api-mode-button text-blue-600 border-blue-600"
-              @click="$apimode.setToRemote()"
+              @click="$api.mode.setToRemote()"
             >
               Use Online
             </button>
@@ -27,7 +27,7 @@
             </span>
             <button
               class="api-mode-button text-red-800 border-red-800"
-              @click="$apimode.setToLocal()"
+              @click="$api.mode.setToLocal()"
             >
               Use Offline
             </button>
