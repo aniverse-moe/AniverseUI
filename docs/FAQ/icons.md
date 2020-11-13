@@ -29,7 +29,7 @@ See [Font Awesome Docs](https://fontawesome.com/how-to-use/on-the-web/referencin
 
 Create a component for your SVG icon in `~/components/icons`. Use `.svg-icon-inline` class.
 
-`~/components/icons/icon-mylogo.vue`:
+`~/components/icons/IconMylogo.vue`:
 ```html
 <template>
   <svg
@@ -46,12 +46,12 @@ Create a component for your SVG icon in `~/components/icons`. Use `.svg-icon-inl
 
 Use it:
 ```html
-<icon-mylogo />
+<IconMylogo />
 ```
 
 Style with Tailwind:
 ```html
-<icon-mylogo class="h-4 text-white fill-current stroke-current stroke-1" />
+<IconMylogo class="h-4 text-white fill-current stroke-current stroke-1" />
 ```
 
 See [Tailwind: Working with SVG Icons](https://tailwindcss.com/course/working-with-svg-icons).
@@ -63,12 +63,12 @@ It's nice when the icon size increase and decrease according to the font size.
 To do that, use **em** units to set the initial icon size:
 
 ```html
-<icon-mylogo style="height: 0.9em; width: 1.25em;" />
+<IconMylogo style="height: 0.9em; width: 1.25em;" />
 ```
 
 Or set the size in the component:
 
-`~/components/icons/icon-mylogo.vue`:
+`~/components/icons/IconMylogo.vue`:
 ```diff
  <template>
    <svg
