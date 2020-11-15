@@ -31,6 +31,8 @@ module.exports = {
     'object-shorthand': 'off',
     'quote-props': ['error', 'consistent'],
     'quotes': 'off',
+    'import/order': 'off',
+    'no-useless-constructor': 'off',
 
     /*
      * vue rules

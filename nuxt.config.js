@@ -74,7 +74,7 @@ export default {
   fontawesome: {
     icons: {
       // https://fontawesome.com/icons?s=solid (Free)
-      solid: ['faWifi'],
+      solid: ['faWifi', 'faExclamation'],
       // https://fontawesome.com/icons?s=brands (Free)
       brands: [],
     }

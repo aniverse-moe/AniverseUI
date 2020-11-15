@@ -10,7 +10,11 @@
 <!-- eslint-disable-next-line vue-scoped-css/require-scoped -->
 <style>
 .first-container {
-  padding: 1rem;
+  padding: 0.4rem;
+
+  @screen md {
+    padding: 1rem;
+  }
 }
 
 html {

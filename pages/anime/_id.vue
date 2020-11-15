@@ -29,12 +29,13 @@
 
 <script>
 import fakeAnime from '~/assets/fakeData/anime'
+import { AnivStatusCodes } from '~/lib/utils/HttpStatusCodes'
 
 export default {
   middleware ({ params, error }) {
     // Check if url-anime-id not in animeList
     if (!fakeAnime.animeList.some((e) => e.id === params.id)) {
-      return error({ statusCode: 404, message: 'Anime Page Not Found' })
+      return error({ statusCode: AnivStatusCodes.NOT_FOUND_404, message: 'Anime Page Not Found' })
     }
   },
 
