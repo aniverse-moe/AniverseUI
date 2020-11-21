@@ -4,17 +4,17 @@
  * Plugin for api usage
  */
 
-import { ApiMode } from '~/lib/api/mode/ApiMode'
+import { ApiModeManager } from '~/lib/api/mode/ApiModeManager'
 
 export class ApiManager {
-  /** @type {ApiMode} */
+  /** @type {ApiModeManager} */
   mode
 
   /**
    * @param {Context} nuxtContext
    */
   constructor (nuxtContext) {
-    this.mode = new ApiMode(nuxtContext.$config.API_START_MODE)
+    this.mode = new ApiModeManager(nuxtContext.$config.API_START_MODE)
   }
 }
 

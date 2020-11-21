@@ -1,24 +1,26 @@
-import { ApiMode } from '~/lib/api/mode/ApiMode'
+// @ts-check
+
+import { ApiModeManager } from '~/lib/api/mode/ApiModeManager'
 import { ApiModesEnum } from '~/lib/api/mode/ApiModesEnum'
 
 describe("ApiMode", () => {
   test("setToRemote works", () => {
-    const newApiMode = new ApiMode(ApiModesEnum.LOCAL)
-    newApiMode.setToRemote()
-    expect(newApiMode.currApiMode).toBe(ApiModesEnum.REMOTE)
+    const apimode = new ApiModeManager(ApiModesEnum.LOCAL)
+    apimode.setToRemote()
+    expect(apimode.currApiMode).toBe(ApiModesEnum.REMOTE)
   })
 
   test("setToLocal works", () => {
-    const newApiMode = new ApiMode(ApiModesEnum.REMOTE)
-    newApiMode.setToLocal()
-    expect(newApiMode.currApiMode).toBe(ApiModesEnum.LOCAL)
+    const apimode = new ApiModeManager(ApiModesEnum.REMOTE)
+    apimode.setToLocal()
+    expect(apimode.currApiMode).toBe(ApiModesEnum.LOCAL)
   })
 
   test("isLocal works", () => {
-    expect(new ApiMode(ApiModesEnum.LOCAL).isLocal).toBe(true)
+    expect(new ApiModeManager(ApiModesEnum.LOCAL).isLocal).toBe(true)
   })
 
   test("isRemote works", () => {
-    expect(new ApiMode(ApiModesEnum.REMOTE).isRemote).toBe(true)
+    expect(new ApiModeManager(ApiModesEnum.REMOTE).isRemote).toBe(true)
   })
 })
