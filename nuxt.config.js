@@ -1,4 +1,3 @@
-import webpack from 'webpack'
 import { ApiModesEnum } from './lib/api/mode/ApiModesEnum'
 
 export default {
@@ -104,13 +103,5 @@ export default {
   },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
-  build: {
-    plugins: [
-      // See https://nuxtjs.org/faq/webpack-plugins/
-      new webpack.ProvidePlugin({
-        // global modules
-        _: 'lodash'
-      })
-    ]
-  }
+  build: {}
 }

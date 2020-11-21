@@ -45,12 +45,5 @@ module.exports = {
       }
     }],
     'vue/singleline-html-element-content-newline': 'off'
-  },
-
-  globals: {
-    // With global `_` we don't get no-undef error when using lodash.
-    // 'false' means the variable can't be overwritten, so the code:
-    //   _ = 'something else' would yield an error.
-    '_': false
-  },
+  }
 }
