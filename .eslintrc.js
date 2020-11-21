@@ -33,6 +33,7 @@ module.exports = {
     'quotes': 'off',
     'import/order': 'off',
     'no-useless-constructor': 'off',
+    'require-await': 'off',
 
     /*
      * vue rules

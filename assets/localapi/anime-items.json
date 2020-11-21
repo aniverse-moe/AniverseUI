@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "Description": "Steins;Gate מתרחש בקיץ של שנת 2010, באקיהאבארה, טוקיו, יפן. העלילה מספרת על קבוצה של חברים שתכנתה את המיקרוגל שלהם, כדי שיוכל לשלוח הודעות טקסט אל העבר,במטרה למנוע מוות של מישהי שהם מכירים.",
+    "Kind": "anime",
+    "Episodes": 24,
+    "AgeRating": 14,
+    "OtherSites": null,
+    "title": {
+      "id": 1,
+      "RomajiTitle": "STEINS;GATE",
+      "JapaneseTitle": "STEINS;GATE",
+      "EnglishTitle": "Steins;Gate",
+      "HebrewTitle": "שטיינס;גייט",
+      "IsHebrewFantitle": false,
+      "anime_item": 1,
+      "franchise": 1,
+      "distributor": null,
+      "published_at": "2020-10-26T15:08:57.175Z",
+      "created_at": "2020-10-26T14:11:20.891Z",
+      "updated_at": "2020-10-26T22:33:02.110Z"
+    },
+    "franchise": {
+      "id": 1,
+      "title": 1,
+      "Description": "Steins;Gate Franchise",
+      "published_at": "2020-10-26T15:07:53.917Z",
+      "created_at": "2020-10-26T14:07:21.955Z",
+      "updated_at": "2020-10-26T22:33:02.059Z"
+    },
+    "published_at": "2020-10-26T15:09:07.722Z",
+    "created_at": "2020-10-26T14:10:05.510Z",
+    "updated_at": "2020-10-26T22:33:02.058Z",
+    "Image": null,
+    "distributors": [],
+    "releases": []
+  },
+  {
+    "id": 2,
+    "Description": "מלחמת הגביע הקדוש – לרדוף אחרי כוחו של ה”גביע הקדוש” שממלא משאלה, תחרות שבה שבעה קוסמים מזמנים שבע נשמות הירואיות שנלחמות זו בזו בשביל הגביע. בשלושת המלחמות הקודמות אף אחד לא הצליח להגיע לגביע הקדוש, ומלחמה חדשה בפתח.",
+    "Kind": "anime",
+    "Episodes": 25,
+    "AgeRating": 17,
+    "OtherSites": null,
+    "title": {
+      "id": 3,
+      "RomajiTitle": "Fate/Zero",
+      "JapaneseTitle": "フェイト/ゼロ",
+      "EnglishTitle": "Fate/Zero",
+      "HebrewTitle": "פייט/זירו",
+      "IsHebrewFantitle": false,
+      "anime_item": 2,
+      "franchise": 3,
+      "distributor": null,
+      "published_at": "2020-10-26T15:08:52.525Z",
+      "created_at": "2020-10-26T14:21:05.761Z",
+      "updated_at": "2020-10-26T17:27:05.582Z"
+    },
+    "franchise": {
+      "id": 3,
+      "title": 3,
+      "Description": "Fate Franchise",
+      "published_at": "2020-10-26T15:08:43.091Z",
+      "created_at": "2020-10-26T14:14:16.309Z",
+      "updated_at": "2020-10-26T17:27:05.545Z"
+    },
+    "published_at": "2020-10-26T15:09:10.409Z",
+    "created_at": "2020-10-26T14:25:57.607Z",
+    "updated_at": "2020-10-26T17:27:05.532Z",
+    "Image": null,
+    "distributors": [],
+    "releases": []
+  },
+  {
+    "id": 3,
+    "Description": "הזיכרונות הראשונות של יוקי קרוס מתחילים בלילה מושלג,לפני 10 שנים היא הותקפה ע”י ערפד ולמזלה הציל אותה ערפד אחר. הערפד שהציל אותה לוקח אותה לאקדמיית קרוס,שם הוא לוקח אותה למנהל והוא מחליט לאמץ אותה לבת שלו.",
+    "Kind": "anime",
+    "Episodes": 13,
+    "AgeRating": 13,
+    "OtherSites": null,
+    "title": {
+      "id": 2,
+      "RomajiTitle": "Vampire Kishi",
+      "JapaneseTitle": "ヴァンパイア騎士〈ナイト〉",
+      "EnglishTitle": "Vampire Knight",
+      "HebrewTitle": "אביר ערפד",
+      "IsHebrewFantitle": false,
+      "anime_item": 3,
+      "franchise": 2,
+      "distributor": null,
+      "published_at": "2020-10-26T15:09:01.261Z",
+      "created_at": "2020-10-26T14:15:35.723Z",
+      "updated_at": "2020-10-26T17:27:40.140Z"
+    },
+    "franchise": {
+      "id": 2,
+      "title": 2,
+      "Description": "Vampire Knight Franchise",
+      "published_at": "2020-10-26T15:08:39.051Z",
+      "created_at": "2020-10-26T14:13:35.116Z",
+      "updated_at": "2020-10-26T17:27:40.083Z"
+    },
+    "published_at": "2020-10-26T15:09:13.150Z",
+    "created_at": "2020-10-26T14:27:38.636Z",
+    "updated_at": "2020-10-26T17:27:40.066Z",
+    "Image": null,
+    "distributors": [],
+    "releases": []
+  }
+]

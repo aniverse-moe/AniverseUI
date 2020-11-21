@@ -1,5 +1,5 @@
 // Global Nuxt types
 
 /**
- * @typedef {import('@nuxt/types').Context} Context
+ * @typedef {import('@nuxt/types').Context} NuxtContext
  */

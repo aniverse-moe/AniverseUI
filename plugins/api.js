@@ -5,21 +5,20 @@
  */
 
 import { ApiModeManager } from '~/lib/api/mode/ApiModeManager'
+import { AnimeApi } from '~/lib/api/AnimeApi'
 
 export class ApiManager {
-  /** @type {ApiModeManager} */
-  mode
-
   /**
-   * @param {Context} nuxtContext
+   * @param {NuxtContext} nuxtContext
    */
   constructor (nuxtContext) {
     this.mode = new ApiModeManager(nuxtContext.$config.API_START_MODE)
+    this.anime = new AnimeApi(nuxtContext)
   }
 }
 
 /**
- * @param {Context} context
+ * @param {NuxtContext} context
  * @param {any} inject
  */
 export default (context, inject) => {
