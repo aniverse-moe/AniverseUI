@@ -1,9 +1,39 @@
 <template>
   <nav class="nav">
     <div class="logo">
-      <nuxt-link :to="{ name: 'index' }" class="logo text-lg upper-nav">
-        Aniverse | אינדקס הפנסאב הגדול
-      </nuxt-link>
+      <div class="flex justify-between">
+        <nuxt-link :to="{ name: 'index' }" class="text-lg upper-nav">
+          Aniverse | אינדקס הפנסאב הגדול
+        </nuxt-link>
+
+        <!-- API Mode area -->
+        <div class="select-none text-left px-1" dir="ltr">
+          <div v-if="$api.mode.isLocal">
+            <span class="text-red-800">
+              <IconOffline />
+              <span class="font-bold">Offline API</span>
+            </span>
+            <button
+              class="api-mode-button text-blue-600 border-blue-600"
+              @click="$api.mode.setToRemote()"
+            >
+              Use Online
+            </button>
+          </div>
+          <div v-else>
+            <span class="text-blue-600">
+              <font-awesome-icon :icon="['fas', 'wifi']" />
+              <span class="font-bold">Online API</span>
+            </span>
+            <button
+              class="api-mode-button text-red-800 border-red-800"
+              @click="$api.mode.setToLocal()"
+            >
+              Use Offline
+            </button>
+          </div>
+        </div>
+      </div>
 
       <div class="subheader">
         <ul>
@@ -51,6 +81,14 @@ nav {
   min-height: 35px;
   max-height: 35px;
   display: flex;
+}
+
+.api-mode-button {
+  @apply font-bold border-solid border-2 rounded px-1 cursor-pointer shadow-sm bg-gray-100;
+
+  &:focus {
+    @apply outline-none;
+  }
 }
 
 .subheader ul {
