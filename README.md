@@ -67,9 +67,10 @@ $ npm run start
 * [Debugger for Chrome](https://marketplace.visualstudio.com/items?itemName=msjsdiag.debugger-for-chrome)
 
 *Recommended:*
+* [Jest](https://marketplace.visualstudio.com/items?itemName=Orta.vscode-jest)
 * [Vue Peek](https://marketplace.visualstudio.com/items?itemName=dariofuzinato.vue-peek)
 * [Tailwind CSS IntelliSense](https://marketplace.visualstudio.com/items?itemName=bradlc.vscode-tailwindcss)
-* [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css)
+* [TabNine](https://marketplace.visualstudio.com/items?itemName=TabNine.tabnine-vscode)
 * [Auto Rename Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag)
 * [Markdown Preview Github Styling](https://marketplace.visualstudio.com/items?itemName=bierner.markdown-preview-github-styles)
 * [npm](https://marketplace.visualstudio.com/items?itemName=eg2.vscode-npm-script)
@@ -116,3 +117,4 @@ Just compare the `<sha>` to the latest commit in the `prod`/`preprod` branch.
 
 ## FAQ
 * [**How to add custom font?**](docs/FAQ/custom-font.md)
+* [**How to add icons?**](docs/FAQ/icons.md)

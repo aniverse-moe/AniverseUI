@@ -1,20 +1,24 @@
 module.exports = {
   root: true,
+
   env: {
     browser: true,
     node: true
   },
+
   parserOptions: {
     parser: 'babel-eslint'
   },
+
   extends: [
     '@nuxtjs',
     'plugin:nuxt/recommended',
     'plugin:vue-scoped-css/vue3-recommended',
   ],
+
   plugins: [
   ],
-  // add your custom rules here
+
   rules: {
     /*
      * eslint rules
@@ -23,10 +27,13 @@ module.exports = {
     'brace-style': ['error', 'stroustrup', { 'allowSingleLine': true }],
     'comma-dangle': ['error', 'only-multiline'],
     'no-lonely-if': 'off',
-    'no-unused-vars': 'warn',
+    'no-unused-vars': 'off', // disabled because JSDoc types are not recognized
     'object-shorthand': 'off',
     'quote-props': ['error', 'consistent'],
     'quotes': 'off',
+    'import/order': 'off',
+    'no-useless-constructor': 'off',
+    'require-await': 'off',
 
     /*
      * vue rules

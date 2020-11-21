@@ -8,9 +8,10 @@
 		"stylelint.vscode-stylelint",
 		"msjsdiag.debugger-for-chrome",
 		// Recommended:
+		"Orta.vscode-jest",
 		"dariofuzinato.vue-peek",
 		"bradlc.vscode-tailwindcss",
-		"ecmel.vscode-html-css",
+		"TabNine.tabnine-vscode",
 		"formulahendry.auto-rename-tag",
 		"bierner.markdown-preview-github-styles",
 		"eg2.vscode-npm-script",
