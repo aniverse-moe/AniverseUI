@@ -6,12 +6,14 @@ import { ApiModesEnum } from '~/lib/api/mode/ApiModesEnum'
 describe("ApiMode", () => {
   test("setToRemote works", () => {
     const apimode = new ApiModeManager(ApiModesEnum.LOCAL)
+    expect(apimode.currApiMode).toBe(ApiModesEnum.LOCAL)
     apimode.setToRemote()
     expect(apimode.currApiMode).toBe(ApiModesEnum.REMOTE)
   })
 
   test("setToLocal works", () => {
     const apimode = new ApiModeManager(ApiModesEnum.REMOTE)
+    expect(apimode.currApiMode).toBe(ApiModesEnum.REMOTE)
     apimode.setToLocal()
     expect(apimode.currApiMode).toBe(ApiModesEnum.LOCAL)
   })
