@@ -6,9 +6,9 @@
           אנימות
         </h1>
         <ul>
-          <li v-for="anime in animeList" :key="anime.id" dir="rtl">
-            <nuxt-link :to="`/anime/${anime.id}`">
-              {{ anime.hebTitle }} ({{ anime.engTitle }})
+          <li v-for="animeTitle in animeTitles" :key="animeTitle.id">
+            <nuxt-link :to="`/anime/${animeTitle.id}`">
+              {{ animeTitle.hebrewTitle }} ({{ animeTitle.englishTitle }})
             </nuxt-link>
           </li>
         </ul>
@@ -18,12 +18,30 @@
 </template>
 
 <script>
-import fakeAnime from '~/assets/fakeData/anime'
+import { AnimeTitle } from '~/lib/models'
+import { AnivStatusCodes } from '~/lib/utils/HttpStatusCodes'
 
 export default {
+  async asyncData ({ error, $api }) {
+    let animeTitles
+
+    try {
+      animeTitles = await $api.anime.getTopAnimeTitlesAsync({ limit: 10 })
+    }
+    catch (e) {
+      return error({
+        statusCode: AnivStatusCodes.API_UNAVAILABLE_503,
+        message: `Can't get anime list from api. Message: ${e}`
+      })
+    }
+
+    return { animeTitles }
+  },
+
   data () {
     return {
-      animeList: fakeAnime.animeList,
+      /** @type {AnimeTitle[]} */
+      animeTitles: [],
     }
   },
 
@@ -49,6 +67,7 @@ export default {
 }
 
 .title {
+  font-family: Bellefair-Regular, "Segoe UI";
   display: block;
   font-weight: 300;
   font-size: 100px;

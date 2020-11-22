@@ -12,12 +12,14 @@ jobs:
     env:
       # Tell the build which commit triggered the workflow
       LAST_COMMIT_SHA: ${{ github.sha }}
+      # Base api url
+      ANIVERSE_API_URL: ${{ secrets.PROD_ANIVERSE_API_URL }}
 
     steps:
       - uses: actions/checkout@v2
 
       - name: Setup Node
-        uses: actions/setup-node@v2.1.0
+        uses: actions/setup-node@v2.1.2
         with:
           node-version: '12.x'
 
@@ -40,11 +42,11 @@ jobs:
           # See: https://github.com/marketplace/actions/github-pages-action#%EF%B8%8F-deploy-to-external-repository-external_repository
           #
           # Before the first time we need to set the Secret and the Deploy Key:
-          #   1. Generate SSH keys with the command: ssh-keygen -t rsa -b 4096 -C "<youremail or comment>" 
+          #   1. Generate SSH keys with the command: ssh-keygen -t rsa -b 4096 -C "<youremail or comment>"
           #      See: https://docs.github.com/en/github/authenticating-to-github/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent#generating-a-new-ssh-key
           #   2. In the Github Pages repo, set the public key as a Deploy Key with write access (Settings > Deploy Keys).
           #   3. In the current Action repo, set the private key as a secret named ACTIONS_DEPLOY_KEY (Settings > Secrets).
           deploy_key: ${{ secrets.PROD_DEPLOY_KEY }}
-          external_repository: aniverse-moe/aniverse-moe.github.io
+          external_repository: ${{ secrets.PROD_DEPLOY_GH_PAGES_REPO }} # (Like: 'aniverse-moe/aniverse-moe.github.io')
           publish_branch: master
           publish_dir: ./dist
