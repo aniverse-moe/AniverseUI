@@ -10,6 +10,15 @@
             }
           }
         ]
+      ],
+      "plugins": [
+        [
+          // See https://stackoverflow.com/a/52351194
+          "@babel/plugin-proposal-class-properties",
+          {
+            "loose": true
+          }
+        ]
       ]
     }
   }
